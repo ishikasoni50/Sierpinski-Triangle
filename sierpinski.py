@@ -1,9 +1,4 @@
 # NAME Ishika Soni
-# Student ID 113492059
-# NetID issoni
-# IAE 101
-# Fall, 2020
-# Project 2 - Sierpinski Triangle
 
 import pygame
 
@@ -44,7 +39,7 @@ def draw_triangle(p1, p2, p3, color, line_width, screen):
     # The flip() function causes the drawn image to appear on the screen.
     pygame.display.flip()
 
-# THIS FUNCTION MUST BE COMPLETED BY THE STUDENT.
+
 # This function returns a point that lies at the midpoint between the input
 # points.
 # p1 - the coordinates of the first point
@@ -56,7 +51,6 @@ def find_midpoint(p1, p2):
     return ((p1[0] + p2[0])/2, (p1[1]+p2[1])/2)
    
 
-# THIS FUNCTION MUST BE COMPLETED BY THE STUDENT
 # This function draw a tringle, and then recursively calls it self to ensure
 # that three smaller triangles are drawn within the new triangle, as described
 # by the Sierpinski Triangle algorithm.
@@ -127,8 +121,7 @@ def main():
     # outermost triangle (the degree 0 triangle).
     sierpinski(degree, p1, p2, p3, initial_color, initial_line_width, screen)
 
-    # DON'T CHANGE THE CODE HERE
-    # DON'T TOUCH THIS LOOP
+    
     done = False
     count = 0
     while not done:
@@ -141,8 +134,7 @@ def main():
 
     print("\nNow Quitting")
     pygame.quit()
-    # DON'T CHANGE THE CODE HERE
     
-# DON'T CHANGE THIS EITHER
+    
 if __name__ == "__main__":
     main()
